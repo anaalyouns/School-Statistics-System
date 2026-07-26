@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>نظام الإحصاء العددي - المرحلة الابتدائية</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/primary.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="main-header">
+
+<div class="logo">
+<img src="images/ministry.png" alt="وزارة التربية والتعليم">
+</div>
+
+<div class="header-title">
+
+<h1>وزارة التربية والتعليم</h1>
+
+<h2>مديرية التربية والتعليم بالدقهلية</h2>
+
+<h2>إدارة بلقاس التعليمية</h2>
+
+<h3>نظام الإحصاء العددي لطلاب مدارس إدارة بلقاس التعليمية</h3>
+
+<div class="year">
+العام الدراسي 2026 / 2027
+</div>
+
+<div class="stage">
+المرحلة الابتدائية
+</div>
+
+</div>
+
+<div class="logo">
+<img src="images/belqas.png" alt="إدارة بلقاس التعليمية">
+</div>
+
+</header>
+
+<section class="card">
+
+<h2>📋 بيانات المدرسة</h2>
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>اسم المدرسة</label>
+<input type="text" id="schoolName" placeholder="اكتب اسم المدرسة">
+</div>
+
+<div class="form-group">
+<label>اسم مدير المدرسة</label>
+<input type="text" id="managerName" placeholder="اكتب اسم مدير المدرسة">
+</div>
+
+<div class="form-group">
+<label>رقم هاتف المدير</label>
+<input type="tel" id="managerPhone" maxlength="11" placeholder="01xxxxxxxxx">
+</div>
+
+<div class="form-group">
+<label>اسم وكيل المدرسة</label>
+<input type="text" id="assistantName" placeholder="اكتب اسم وكيل المدرسة">
+</div>
+
+<div class="form-group">
+<label>رقم هاتف الوكيل</label>
+<input type="tel" id="assistantPhone" maxlength="11" placeholder="01xxxxxxxxx">
+</div>
+
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>📊 الإحصاء العددي للطلاب</h2>
+<div class="progress-container">
+
+    <div class="progress-text">
+        نسبة اكتمال البيانات
+        <span id="progressPercent">0%</span>
+    </div>
+
+    <div class="progress">
+
+        <div id="progressBar" class="progress-bar"></div>
+
+    </div>
+
+</div>
+
+<table class="stats-table">
+
+<thead>
+
+<tr>
+
+<th>الصف الدراسي</th>
+
+<th>👦 بنين</th>
+
+<th>👧 بنات</th>
+
+<th>الإجمالي</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>الصف الأول الابتدائي</td>
+
+<td><input type="number" class="boys"></td>
+
+<td><input type="number" class="girls"></td>
+
+<td class="total">0</td>
+
+</tr>
+
+<tr>
+
+<td>الصف الثاني الابتدائي</td>
+
+<td><input type="number" class="boys"></td>
+
+<td><input type="number" class="girls"></td>
+
+<td class="total">0</td>
+
+</tr>
+
+<tr>
+
+<td>الصف الثالث الابتدائي</td>
+
+<td><input type="number" class="boys"></td>
+
+<td><input type="number" class="girls"></td>
+
+<td class="total">0</td>
+
+</tr>
+
+<tr>
+
+<td>الصف الرابع الابتدائي</td>
+
+<td><input type="number" class="boys"></td>
+
+<td><input type="number" class="girls"></td>
+
+<td class="total">0</td>
+
+</tr>
+
+<tr>
+
+<td>الصف الخامس الابتدائي</td>
+
+<td><input type="number" class="boys"></td>
+
+<td><input type="number" class="girls"></td>
+
+<td class="total">0</td>
+
+</tr>
+
+<tr>
+
+<td>الصف السادس الابتدائي</td>
+
+<td><input type="number" class="boys"></td>
+
+<td><input type="number" class="girls"></td>
+
+<td class="total">0</td>
+
+</tr>
+
+</tbody>
+
+</table>
+<div class="summary">
+
+    <div class="summary-box">
+        <span>👦 إجمالي البنين</span>
+        <h3 id="boysTotal">0</h3>
+    </div>
+
+    <div class="summary-box">
+        <span>👧 إجمالي البنات</span>
+        <h3 id="girlsTotal">0</h3>
+    </div>
+
+    <div class="summary-box">
+        <span>🎓 إجمالي الطلاب</span>
+        <h3 id="allTotal">0</h3>
+    </div>
+
+</div>
+
+<div class="buttons">
+
+    <button id="saveBtn" class="save-btn">
+        💾 تسجيل البيانات
+    </button>
+
+    <button id="resetBtn" class="reset-btn">
+    🔄 إعادة تعيين
+</button>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+    جميع الحقوق محفوظة © إدارة بلقاس التعليمية
+
+</footer>
+
+</div>
+<div id="messageBox" class="message-box">
+    <span id="messageText"></span>
+</div>
+<script src="css/js/primary.js"></script>
+
+</body>
+
+</html>
